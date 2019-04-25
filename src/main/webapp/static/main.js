@@ -74,7 +74,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-header></app-header>\n<div class=\"container-fluid\">\n  <h1>It my app </h1>\n  <app-recipe></app-recipe>\n  <app-shopping-list></app-shopping-list>\n</div>"
+module.exports = "<div class=\"container-fluid\">\n<app-header></app-header>\n  <app-recipe></app-recipe>\n  <app-shopping-list></app-shopping-list>\n</div>"
 
 /***/ }),
 
@@ -181,7 +181,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\r\n        <a class=\"navbar-brand\" href=\"#\">Recipe Book</a>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">\r\n          <ul class=\"navbar-nav\">\r\n            <li class=\"nav-item active\">\r\n              <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link\" href=\"#\">Features</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link\" href=\"#\">Pricing</a>\r\n            </li>\r\n            <li class=\"nav-item dropdown\">\r\n              <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                Dropdown link\r\n              </a>\r\n              <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n                <a class=\"dropdown-item\" href=\"#\">Action</a>\r\n                <a class=\"dropdown-item\" href=\"#\">Another action</a>\r\n                <a class=\"dropdown-item\" href=\"#\">Something else here</a>\r\n              </div>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </nav>"
+module.exports = "<div class=\"header row\">\r\n  <div class=\"col-xl-2 col-lg-2 col-sm-2 col-md-2 saama-logo\">\r\n      <img src=\"../../assets/images/saama_logo_white.png\" alt=\"Saama Logo\">\r\n  </div>\r\n  <div class=\"col-xl-2 col-lg-2 col-sm-2 col-md-2\">\r\n  </div>\r\n  <div class=\"col-xl-3 col-lg-3 col-sm-3 col-md-3 text-right client-heading\">\r\n      CLIGNOSIS\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -393,7 +393,7 @@ var RecipeListComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3JlY2lwZS9yZWNpcGUuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = ".background-image{\r\n    min-height: 100%;\r\n    height: 100%;\r\n    background-image: url('drugsBackground.jpg');\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcmVjaXBlL3JlY2lwZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWiw0Q0FBOEQ7QUFDbEUiLCJmaWxlIjoic3JjL2FwcC9yZWNpcGUvcmVjaXBlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYmFja2dyb3VuZC1pbWFnZXtcclxuICAgIG1pbi1oZWlnaHQ6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi4vLi4vYXNzZXRzL2ltYWdlcy9kcnVnc0JhY2tncm91bmQuanBnKTtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -404,7 +404,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n<div class=\"col-md-5\">\n  <app-recipe-list></app-recipe-list>\n</div>\n<div class=\"col-md-7\">\n  <app-recipe-details></app-recipe-details>\n</div>\n</div>"
+module.exports = "<div class=\"content\">\n  <div class=\"row background-image\">\n      <div class=\"col-lg-6 col-sm-6 col-md-6\">\n\n      </div>\n      <div class=\"col-lg-6 col-sm-6 col-md-6\">\n          <div style=\"background-color:whitesmoke;margin:10% 0% 5% 0%\">\n              <form action=\"drugSearch.html\">\n                  <div class=\"login-form-container\">\n                    <label for=\"uname\"><b>Username</b></label>\n                    <input type=\"text\" placeholder=\"Enter Username\" name=\"uname\" required>\n                  \n                    <label for=\"psw\"><b>Password</b></label>\n                    <input type=\"password\" placeholder=\"Enter Password\" name=\"psw\" required>\n                \n                    <button type=\"submit\" style=\"background-color:#ccc\">Login</button>\n                    <label>\n                      <input type=\"checkbox\"  name=\"remember\"> Remember me\n                    </label>\n                  </div>\n                \n                  <div class=\"login-form-container\" style=\"background-color:#f1f1f1\">\n                    <button type=\"button\" class=\"cancelbtn\">Cancel</button>\n                    <span class=\"psw\">Forgot <a href=\"#\">password?</a></span>\n                  </div>\n                </form>\n          </div>\n      </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -516,7 +516,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <div class=\"col-md-10\">\n    <app-shopping-edit></app-shopping-edit>\n    <hr/>\n    <p>The List</p>\n  </div>\n</div>\n"
+module.exports = "<div class=\"footer row\">\n  <div class=\"col-xl-12 col-lg-12 col-sm-12 col-md-12 text-center footer-text\">\n       Copyright 2019 Saama Technologies - All Rights Reserved\n  </div>\n</div>"
 
 /***/ }),
 
@@ -615,7 +615,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\D_As_Drive\UPDATED_KN\ANGULAR-IO_TT\my-app\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\D_As_Drive\UPDATED_KN\ANGULAR-IO_TT\ria\my-app\src\main.ts */"./src/main.ts");
 
 
 /***/ })
